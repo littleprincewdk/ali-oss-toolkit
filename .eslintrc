@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "extends": ["airbnb-base", "prettier"],
+  "overrides": [
+    {
+      "files": ["./**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "plugins": ["@typescript-eslint"],
+      "extends": [
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

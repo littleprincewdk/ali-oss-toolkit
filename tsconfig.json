@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "alwaysStrict": false,
+    "declaration": false,
+    "module": "es2015",
+    "target": "es2015",
+    "outDir": "dist",
+    "lib": ["es5", "es2015"],
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "pretty": true,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["./**/*.ts"]
+}
