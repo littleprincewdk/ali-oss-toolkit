@@ -1,8 +1,11 @@
 {
   "name": "ali-oss-toolkit",
   "version": "1.0.0",
-  "description": "",
+  "description": "阿里云oss工具集",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "test:upload": "npm run build && node test/upload.js",
     "lint:script": "eslint . --ext '.js,.ts' --report-unused-disable-directives",
     "lint-fix:script": "npm run lint:script -- --fix"
   },
@@ -10,11 +13,17 @@
   "author": "",
   "license": "",
   "dependencies": {
+    "@types/ali-oss": "^6.0.5",
+    "ali-oss": "^6.10.0",
+    "chalk": "^4.1.0",
+    "glob": "^7.1.6",
+    "ignore": "^5.1.8",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-angular": "^8.2.0",
+    "@types/node": "^14.11.2",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "eslint": "^6.6.0",
