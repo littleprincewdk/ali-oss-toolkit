@@ -2,9 +2,11 @@
   "compilerOptions": {
     "allowJs": false,
     "alwaysStrict": false,
-    "declaration": false,
-    "module": "es2015",
-    "target": "es2015",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "module": "commonjs",
+    "target": "ES6",
     "outDir": "dist",
     "lib": ["es5", "es2015"],
     "strict": true,
@@ -21,8 +23,8 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "pretty": true,
-    "sourceMap": true
+    "sourceMap": false
   },
   "exclude": ["node_modules"],
-  "include": ["./**/*.ts"]
+  "include": ["./src/**/*.ts"]
 }
